@@ -1,0 +1,12 @@
+xueza 100000001 lx 0 0 0
+Y
+haruue 2015213817 cqupt 100 88 100
+Y
+bcc 2015213821 cqupt 78 77 52
+Y
+zengxin 2015213853 cqupt 79 88 74
+Y
+hwx 2015213823 cqupt 77 78 79
+Y
+xueba 100000000 thu 100 100 100
+N
