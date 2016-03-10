@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83df7f69-400a-44fe-8a7d-af04786e72cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stuList.cpp" afterPath="$PROJECT_DIR$/stuList.cpp" />
     </list>
     <ignored path="2_2_4_LinkedListDelete.iws" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="stuList.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stuList.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4385965">
-              <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.84210527">
+              <caret line="443" column="2" selection-start-line="443" selection-start-column="2" selection-end-line="443" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -383,14 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stuList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -399,10 +390,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stuList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stuList.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4385965">
-          <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.84210527">
+          <caret line="443" column="2" selection-start-line="443" selection-start-column="2" selection-end-line="443" selection-end-column="2" />
           <folding />
         </state>
       </provider>

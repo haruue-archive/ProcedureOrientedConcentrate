@@ -173,7 +173,7 @@ stu *deleteList(stu *list, IntegerLinkedList *depthList) {
             currentDepth2 = currentDepth2->next;
             j++;
         }
-        if (realDepthList == NULL) {
+        if (NULL == realDepthList) {
             realDepthList = new IntegerLinkedList();
             currentRealDepthList = realDepthList;
         } else {
@@ -347,7 +347,7 @@ IntegerLinkedList *selectListForDepth(stu *list, const char *field, const char *
 stu *selectList(stu *list, const char *field, const char value) {
     IntegerLinkedList *depthList = selectListForDepth(list, field, value);
     stu *resultList = findListByDepth(list, depthList);
-    if (depthList != NULL) {
+    if (NULL != depthList) {
         freeIntegerLinkList(depthList);
     }
     return resultList;
@@ -356,7 +356,7 @@ stu *selectList(stu *list, const char *field, const char value) {
 stu *selectList(stu *list, const char *field, const int value) {
     IntegerLinkedList *depthList = selectListForDepth(list, field, value);
     stu *resultList = findListByDepth(list, depthList);
-    if (depthList != NULL) {
+    if (NULL != depthList) {
         freeIntegerLinkList(depthList);
     }
     return resultList;
@@ -365,7 +365,7 @@ stu *selectList(stu *list, const char *field, const int value) {
 stu *selectList(stu *list, const char *field, const char *value) {
     IntegerLinkedList *depthList = selectListForDepth(list, field, value);
     stu *resultList = findListByDepth(list, depthList);
-    if (depthList != NULL) {
+    if (NULL != depthList) {
         freeIntegerLinkList(depthList);
     }
     return resultList;
@@ -382,7 +382,7 @@ void display(stu *list, bool isHeader) {
     if (isHeader) {
         cout << "姓名\t性别\t学号\t年龄" << endl;
     }
-    while (currentStudent != NULL) {
+    while (NULL != currentStudent) {
         cout << currentStudent->name << "\t" << currentStudent->sex << "\t" << currentStudent->no << "\t" << currentStudent->age << endl;
         currentStudent = currentStudent->next;
     }
@@ -427,7 +427,7 @@ void displayNode(stu *node, bool isHeader) {
     if (isHeader) {
         cout << "姓名\t性别\t学号\t年龄" << endl;
     }
-    if (node != NULL) {
+    if (NULL != node) {
         cout << node->name << "\t" << node-> sex << "\t" << node->no << "\t" << node->age << endl;
     }
 }
@@ -469,7 +469,7 @@ stu *insertList(stu *list, stu *node) {
     newNode->no = node->no;
     newNode->age = node->age;
     newNode->next = NULL;
-    if (list == NULL) {
+    if (NULL == list) {
         list = newNode;
     } else {
         while (NULL != currentStudent->next) {
@@ -490,7 +490,7 @@ stu *insertList(stu *list, stu *node) {
  */
 stu *combineList(stu *list1, stu *list2) {
     stu *currentStudent = list1;
-    if (currentStudent == NULL) {
+    if (NULL == currentStudent) {
         list1 = list2;
     } else {
         while (NULL != currentStudent->next) {
