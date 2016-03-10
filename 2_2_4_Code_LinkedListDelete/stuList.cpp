@@ -53,7 +53,6 @@ void freeStuList(stu *list) {
         currentStudent = currentStudent->next;
         delete tmp;
     }
-    list = NULL;
 }
 
 /**
@@ -68,7 +67,6 @@ void freeIntegerLinkList(IntegerLinkedList *list) {
         currentInteger = currentInteger->next;
         delete tmp;
     }
-    list = NULL;
 }
 
 /**
