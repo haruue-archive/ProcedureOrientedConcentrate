@@ -44,7 +44,7 @@ int linkedListFind(Student *list, int studentId);
 void linkedListFree(Student *list);
 
 Student *studentLinkedList = NULL;
-int savedFlag = 0;
+int savedFlag = 1;
 
 int main() {
     int status = 1;
@@ -344,7 +344,7 @@ void out_storage() {
     switch (choose) {
         case 'Y':
         case 'y':
-            linkedListDelete(studentLinkedList, depth);
+            studentLinkedList = linkedListDelete(studentLinkedList, depth);
             break;
         default:
             cout << "操作已取消" << endl;

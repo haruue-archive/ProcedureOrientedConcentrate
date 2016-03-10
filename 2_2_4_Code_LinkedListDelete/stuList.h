@@ -1,7 +1,3 @@
-//
-// Created by 冰月 on 2016/3/9.
-//
-
 #ifndef INC_2_2_4_LINKEDLISTDELETE_STULIST_H
 #define INC_2_2_4_LINKEDLISTDELETE_STULIST_H
 

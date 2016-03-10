@@ -21,16 +21,20 @@ struct Question {
  */
 Question *randQuestion(Question *emptyQuestion) {
     emptyQuestion->answer = -1;
+    emptyQuestion->num1 = rand() % 51;
+    emptyQuestion->num2 = rand() % 51;
     while (emptyQuestion->answer < 0 || emptyQuestion->answer > 50) {
-        srand((unsigned int) time(NULL));
-        emptyQuestion->num1 = rand() % 51;
-        emptyQuestion->num2 = rand() % 51;
         emptyQuestion->op = (rand() % 2 == 0) ? '+' : '-';
         switch (emptyQuestion->op) {
             case '+':
                 emptyQuestion->answer = emptyQuestion->num1 + emptyQuestion->num2;
                 break;
             case '-':
+                if (emptyQuestion->num1 < emptyQuestion->num2) {
+                    emptyQuestion->num1 ^= emptyQuestion->num2;
+                    emptyQuestion->num2 ^= emptyQuestion->num1;
+                    emptyQuestion->num1 ^= emptyQuestion->num2;
+                }
                 emptyQuestion->answer = emptyQuestion->num1 - emptyQuestion->num2;
                 break;
             default:
