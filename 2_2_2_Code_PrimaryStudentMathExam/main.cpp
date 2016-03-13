@@ -20,26 +20,21 @@ struct Question {
  * @return 指向生成的随机问题的指针
  */
 Question *randQuestion(Question *emptyQuestion) {
-    emptyQuestion->answer = -1;
+    srand(time(NULL));
     emptyQuestion->num1 = rand() % 51;
     emptyQuestion->num2 = rand() % 51;
-    while (emptyQuestion->answer < 0 || emptyQuestion->answer > 50) {
-        emptyQuestion->op = (rand() % 2 == 0) ? '+' : '-';
-        switch (emptyQuestion->op) {
-            case '+':
-                emptyQuestion->answer = emptyQuestion->num1 + emptyQuestion->num2;
-                break;
-            case '-':
-                if (emptyQuestion->num1 < emptyQuestion->num2) {
-                    emptyQuestion->num1 ^= emptyQuestion->num2;
-                    emptyQuestion->num2 ^= emptyQuestion->num1;
-                    emptyQuestion->num1 ^= emptyQuestion->num2;
-                }
-                emptyQuestion->answer = emptyQuestion->num1 - emptyQuestion->num2;
-                break;
-            default:
-                continue;
+    emptyQuestion->answer = emptyQuestion->num1 + emptyQuestion->num2;
+    if (emptyQuestion->answer > 0 && emptyQuestion->answer < 50) {
+        emptyQuestion->op = '+';
+        return emptyQuestion;
+    } else {
+        emptyQuestion->op = '-';
+        if (emptyQuestion->num1 < emptyQuestion->num2) {
+            emptyQuestion->num1 ^= emptyQuestion->num2;
+            emptyQuestion->num2 ^= emptyQuestion->num1;
+            emptyQuestion->num1 ^= emptyQuestion->num2;
         }
+        emptyQuestion->answer = emptyQuestion->num1 - emptyQuestion->num2;
     }
     return emptyQuestion;
 }
